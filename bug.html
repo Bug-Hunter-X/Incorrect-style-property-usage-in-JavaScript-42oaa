@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be visible initially.
+  </div>
+  <script>
+    // Incorrect attempt to set display to block. The property is style.display, not display.
+    document.getElementById("myDiv").display = "block"; 
+  </script>
+</body>
+</html>
